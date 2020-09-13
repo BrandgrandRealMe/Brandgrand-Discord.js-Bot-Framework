@@ -1,4 +1,4 @@
-var bowner = '531186390717825074';
+var bowner = ['519589931597692929', '531186390717825074'];
 module.exports = {
   catagory: 'bot',
   name: 'ping',
