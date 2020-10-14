@@ -10,7 +10,7 @@ client.commands = new Discord.Collection();
 const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 client.once('ready', () => {
 	console.log('Ready to go!');
-client.user.setActivity(`BOT FRAMWORK BY BRANDGRAND`, { type: 'WATCHING' });
+client.user.setActivity(`Playing Fortnite With Random People`, { type: 'PLAYING' });
 });
 const commandFolder = fs.readdirSync('./cmds').filter(file => file.endsWith('.js'));
 
