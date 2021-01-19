@@ -1,4 +1,4 @@
-var bowner = ['519589931597692929', '531186390717825074'];
+var bowner = ['519589931597692929', '531186390717825074']; // REPLACE IDS WITH YOUR ID/S
 const mpmsg = `!!ERROR!!\nYou dont have the required perms!`
 module.exports = {
   catagory: 'bot|fun|util|mod|owner',
@@ -7,6 +7,6 @@ module.exports = {
   aliases: ['aliases'],
   execute: async (message, args, client, db, packageInfo, Discord, member) => {
     if (!message.member.hasPermission('PERMS')) return message.reply(mpmsg);
-    
- if (message.deletable) return message.delete();
+    // PUT CODE FOR COMMAND HERE
+ if (message.deletable) return message.delete(); // THIS DELETES THE MESSAGE SENT BY USER
 }};
