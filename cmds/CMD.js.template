@@ -1,12 +1,14 @@
+//RENAME TO <commandname>.js
+
 var bowner = ['519589931597692929', '531186390717825074']; // REPLACE IDS WITH YOUR ID/S
 const mpmsg = `!!ERROR!!\nYou dont have the required perms!`
 module.exports = {
-  catagory: 'bot|fun|util|mod|owner',
-  name: 'NAME',
+  catagory: 'bot|fun|util|mod|owner', //Pick One
+  name: '<commandname>',
   desc: 'description',
-  aliases: ['aliases'],
+  aliases: ['aliases'], 
   execute: async (message, args, client, db, packageInfo, Discord, member) => {
-    if (!message.member.hasPermission('PERMS')) return message.reply(mpmsg);
+    if (!message.member.hasPermission('PERMS')) return message.reply(mpmsg); // if you want people to have perms to use this. (Delete if not used)
     // PUT CODE FOR COMMAND HERE
  if (message.deletable) return message.delete(); // THIS DELETES THE MESSAGE SENT BY USER
 }};
